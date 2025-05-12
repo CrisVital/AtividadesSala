@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência de Viagens</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #008CBA;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      background: white;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .tours {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .tour {
+      background: #eaeaea;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .quote {
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <h1>Explore e Viaje</h1>
+    <p>Vamos agora mesmo!</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Lista de Tours</a>
+    <a href="#">Destinos</a>
+    <a href="#">Descontos</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section>
+    <h2>Escolha seu feriado perfeito</h2>
+    <p>Os destinos de férias mais pesquisados:</p>
+    <div class="tours">
+      <div class="tour">
+        <h3>Suíça - 7 Dias</h3>
+        <p>$270</p>
+      </div>
+      <div class="tour">
+        <h3>St. Moritz - Esqui</h3>
+        <p>$450</p>
+      </div>
+      <div class="tour">
+        <h3>Big in Japan</h3>
+        <p>$522</p>
+      </div>
+      <div class="tour">
+        <h3>Bilhete de Metrô - Japão</h3>
+        <p>$255</p>
+      </div>
+      <div class="tour">
+        <h3>Voo de Helicóptero</h3>
+        <p>$250</p>
+      </div>
+      <div class="tour">
+        <h3>Aventura de Mergulho</h3>
+        <p>$412</p>
+      </div>
+    </div>
+    <p><a href="#">Ver todos os tours</a></p>
+  </section>
+
+  <section>
+    <h2>Galeria de Tours</h2>
+    <p>Explore momentos incríveis ao redor do mundo.</p>
+  </section>
+
+  <section>
+    <h2>Nossa Presença</h2>
+    <p>Estamos presentes nas principais cidades e destinos turísticos do mundo.</p>
+  </section>
+
+  <section>
+    <h2>Fale Conosco</h2>
+    <p>Adoraríamos ajudar você a planejar sua próxima jornada.</p>
+  </section>
+
+  <footer>
+    <p class="quote">"Viajar te torna modesto. Você vê o quão pequeno é o seu lugar no mundo."</p>
+  </footer>
+
 </body>
 </html>
