@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Paintings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      background-color: #fff;
+    }
+
+    .highlight {
+      text-align: center;
+      max-width: 300px;
+      margin: 1rem;
+    }
+
+    .highlight i {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio {
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+
+    .portfolio h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .project a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .blog {
+      padding: 2rem;
+      background-color: #fff;
+    }
+
+    .blog h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .blog article {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    .blog .timestamp {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .blog a {
+      color: #007bff;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .comments {
+      margin-left: 1rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🎨 Paintings</h1>
+      <nav>
+        <a href="#">My Portfolio</a>
+        <a href="#">Get Started</a>
+        <a href="#">Learn More</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="highlights">
+    <div class="highlight">
+      <i class="fas fa-cog"></i>
+      <h2>Ipsum consequat</h2>
+      <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+    </div>
+    <div class="highlight">
+      <i class="fas fa-bolt"></i>
+      <h2>Magna etiam dolor</h2>
+      <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+    </div>
+    <div class="highlight">
+      <i class="fas fa-star"></i>
+      <h2>Tempus adipiscing</h2>
+      <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Ipsum feugiat et dolor</h3>
+        <p>Lorem ipsum dolor sit amet veroeros sed amet blandit consequat lorem blandit adipiscing et feugiat.</p>
+        <a href="#">Find out more</a>
+      </div>
+      <div class="project">
+        <h3>Sed etiam lorem nulla</h3>
+        <p>Lorem ipsum dolor sit amet veroeros sed amet blandit consequat lorem blandit adipiscing et feugiat.</p>
+        <a href="#">Find out more</a>
+      </div>
+      <div class="project">
+        <h3>Consequat et tempus</h3>
+        <p>Lorem ipsum dolor sit amet veroeros sed amet blandit consequat lorem blandit adipiscing et feugiat.</p>
+        <a href="#">Find out more</a>
+      </div>
+      <div class="project">
+        <h3>Blandit sed adipiscing</h3>
+        <p>Lorem ipsum dolor sit amet veroeros sed amet blandit consequat lorem blandit adipiscing et feugiat.</p>
+        <a href="#">Find out more</a>
+      </div>
+      <div class="project">
+        <h3>Etiam nisl consequat</h3>
+        <p>Lorem ipsum dolor sit amet veroeros sed amet blandit consequat lorem blandit adipiscing et feugiat.</p>
+        <a href="#">Find out more</a>
+      </div>
+      <div class="project">
+        <h3>Dolore nisl feugiat</h3>
+        <p>Lorem ipsum dolor sit amet veroeros sed amet blandit consequat lorem blandit adipiscing et feugiat.</p>
+        <a href="#">Find out more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <h2>The Blog</h2>
+    <article>
+      <h3>Magna tempus consequat</h3>
+      <p class="timestamp">Posted 45 minutes ago</p>
+      <p>Lorem ipsum dolor sit amet veroeros sed blandit consequat et adipiscing feugiat phasellus tempus hendrerit.</p>
+      <a href="#"><i class="fas fa-file-alt"></i> Continue Reading</a>
+      <span class="comments"><i class="fas fa-comments"></i> 33 comments</span>
+    </article>
+    <article>
+      <h3>Aptent veroeros aliquam</h3>
+      <p class="timestamp">Posted 45 minutes ago</p>
+      <p>Lorem ipsum dolor sit amet veroeros sed blandit consequat et adipiscing feugiat phasellus tempus hendrerit.</p>
+      <a href="#"><i class="fas fa-file-alt"></i> Continue Reading</a>
+      <span class="comments"><i class="fas fa-comments"></i> 33 comments</span>
+    </article>
+  </section>
+
+  <footer>
+    <p>© Untitled. All rights reserved.<br>Design: ALUNOS DE WEB</p>
+  </footer>
+</body>
+</html>
 
